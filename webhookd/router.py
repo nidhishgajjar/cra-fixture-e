@@ -1,8 +1,10 @@
 from webhookd.handlers import stripe as stripe_handler
+from webhookd.handlers import github as github_handler
 
 
 HANDLERS = {
     "stripe": stripe_handler.handle,
+    "github": github_handler.handle,
 }
 
 
